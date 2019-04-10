@@ -9,3 +9,8 @@ RUN wget https://github.com/boyter/scc/releases/download/v2.2.0/scc-2.2.0-x86_64
 FROM ubuntu
 
 COPY --from=builder /scc /usr/local/bin/scc
+
+WORKDIR /app
+
+CMD ["--help"]
+ENTRYPOINT ["scc"]
