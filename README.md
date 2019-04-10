@@ -7,7 +7,7 @@ Base project: https://github.com/boyter/scc
 ````bash
 docker run \
        --rm \
-       --name docker \
+       --name docker-scc \
        -v "myapp:/app" \
        amenezes/docker-scc src --cocomo
 ````
